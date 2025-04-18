@@ -158,8 +158,18 @@
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;        /* Prevent overflow */
+    word-wrap: break-word;   /* Break long words */
   }
-  
+
+@media (max-width: 768px) {
+  .skill-card {
+    width: 140px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
   .skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
